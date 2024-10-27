@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: 
+        url('images/petcollage.jpg') no-repeat center center fixed,
+        linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(233, 159, 247, 0.8) 93%);
+    background-size: cover; 
+    color: white; 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.site-icon {
+    width: 30px; 
+    height: auto; 
+    position: absolute; 
+    top: 10px;
+    left: 10px; 
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;          
+    margin: 0;           
+    text-align: center;   
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 15px;   
+    position: relative; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    background-color: white; 
+    color: mediumslateblue;
+    text-decoration: none;
+    padding: 15px 30px; 
+    border-radius: 25px; 
+    position: relative; 
+}
+
+nav ul li a::before,
+nav ul li a::after,
+nav ul li a .toe {
+    content: '';
+    position: absolute;
+    background-color: yellowgreen; 
+    border-radius: 50%; 
+}
+
+nav ul li a::before {
+    width: 30px; 
+    height: 30px; 
+    left: -20px; 
+    top: 5px; 
+}
+
+nav ul li a::after {
+    width: 30px; 
+    height: 30px;
+    right: -20px; 
+    top: 5px; 
+}
+
+nav ul li a .toe {
+    width: 20px; 
+    height: 20px; 
+    top: 15px;
+}
+
+nav ul li a .toe:nth-child(1) { left: 10px; } 
+nav ul li a .toe:nth-child(2) { left: -15px; } 
+nav ul li a .toe:nth-child(3) { right: -15px; } 
+nav ul li a .toe:nth-child(4) { left: 25px; } 
+
+nav ul li a:hover {
+    background-color: pink; 
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: pink;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery figure {
+    margin: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
